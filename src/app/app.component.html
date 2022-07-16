@@ -1,0 +1,13 @@
+<div>
+  <div *ngFor="let car of cars">  
+    We have a {{car.make}} {{car.model}} with a mileage of {{car.miles}} 
+  </div>
+</div>
+
+<button (click)="addCar()">Agregar Predeterminado</button>
+<div>
+<input [(ngModel)]='make' type='text'>
+<input [(ngModel)]='model' type='text'>
+<input [(ngModel)]='miles' type='number' >
+<button (click)="addCarNew()">Personalizado</button>
+</div>
